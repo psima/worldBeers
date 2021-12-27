@@ -1,0 +1,39 @@
+# `WorldBeers` PROJECT parent swiftlint file.
+# The parent swiftlint file for the whole workspace.
+opt_in_rules:
+- unavailable_function
+- anyobject_protocol
+- explicit_init
+- discouraged_assert
+line_length: 400
+force_cast: warning # implicitly
+force_try: warning
+identifier_name:
+    min_length: 1
+    validates_start_with_lowercase: false
+    allowed_symbols: ["_"]
+type_name:
+    min_length: 3
+    validates_start_with_lowercase: false
+    allowed_symbols: ["_"]
+file_length:
+    warning: 400
+    error: 2000
+cyclomatic_complexity:
+    warning: 10
+    error: 40
+function_body_length:
+    warning: 40
+    error: 200
+type_body_length:
+    warning: 200
+    error: 1000
+shorthand_operator: warning
+function_parameter_count:
+    warning: 5
+    error: 20
+nesting:
+    type_level: 2
+
+excluded:
+- Pods
